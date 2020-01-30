@@ -1,5 +1,6 @@
 import os
 import telebot
+from server import *
 
 
 TG_TOKEN = os.environ.get("TG_TOKEN")
@@ -36,7 +37,7 @@ def handle_photo(message):
     file_ID = message.photo[-1].file_id 
     file_info = bot.get_file(file_ID)
     downloaded_file = bot.download_file(file_info.file_path)
-    answer = "ok"
+    answer = process_photo(dowloaded_file)
     bot.reply_to(message, answer)
 
 
