@@ -15,6 +15,8 @@ def process_photo(img_file):
 def test_curl():
     test_response = request.get("http://localhost:4000/api/test")
     if test_response == "Test success\n":
+        print("Server's answering")
         return True
+    print("Server's not answering")
     return False
 
