@@ -2,15 +2,15 @@ import requests
 
 
 def process_photo(img_file):
-    print(type(img_file))
-    files = {
-        "image": ("image.jpg", img_file),
-    }
+    print(img_file)
     if test_curl():
+        files = {
+            "image": ("image.jpg", img_file),
+        }
         response = requests.post("http://localhost:4000/api/containFace", files=files)
         print(response)
-        return response
-    return None
+        return "Connection succeed"
+    return "No connection"
 
 
 def test_curl():

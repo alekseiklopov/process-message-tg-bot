@@ -8,4 +8,3 @@ ENV TG_TOKEN=${TG_TOKEN}
 COPY . .
 EXPOSE 4000
 CMD ["python3", "./main.py"]
-
