@@ -1,6 +1,5 @@
 #!/bin/bash
 
-docker build -t telebot ./src/telebot/
+docker build -t sadalexk/process-message-tg-bot:telebot ./src/telebot/
 
 echo Telebot build complited
-

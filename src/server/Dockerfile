@@ -8,6 +8,7 @@ RUN pip3 install opencv-python
 RUN pip3 install Flask
 RUN pip3 install imutils
 RUN pip3 install numpy
+RUN pip3 install Pillow
 RUN apt-get install git -y
 RUN apt-get install python3-opencv -y
 RUN pip3 install mtcnn

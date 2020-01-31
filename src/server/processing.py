@@ -1,5 +1,4 @@
 from mtcnn.mtcnn import MTCNN
-import cv2
 import numpy as np
 import io
 import PIL.Image
@@ -40,4 +39,3 @@ def get_json_response(status, description, data):
         "description": description,
         "data": data
     }) + "\n"
-
